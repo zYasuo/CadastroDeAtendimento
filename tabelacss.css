@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #126aa6, #2977af, #3c84b8, #4c91c0, #5d9ec9);
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: #003F63;
+  }
+  
+  header img {
+    max-height: 100px;
+    margin-left: 20px;
+    
+  }
+
+
+h1 {
+
+	text-align: center;
+    margin: 1em;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 4px 10px 2px rgba(0,63,99,0.6);
+    
+}
+
+#table-thead {
+    background-color: #007bff;
+}
+
+/* Estilos para a paginação */
+#pagination-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#pagination-div button {
+  
+    background-color: #003F63;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #pagination-div button:hover {
+    background-color: #0062cc;
+  }
+
+
+.page-number {
+    padding: 0.5em;
+    border: 1px solid #007bff;
+    margin: 0 0.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.active-page {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.page-number:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para o select de itens por página */
+#form-per-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#form-per-page label {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+#per-page {
+    padding: 0.5em;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#per-page:hover {
+    background-color: #0062cc;
+}
+
+/* Estilos para o campo de busca */
+.searchInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+.white{
+    background-color: #ffffff;
+    color: #000;
+}
+
+
+/* Estilos para o formulário */
+.form {
+    background-color: #003F63;
+    padding: 2em;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 11px 17px 5px 0px rgba(0,63,99,0.75);
+-webkit-box-shadow: 11px 17px 5px 0px rgba(0,63,99,0.75);
+-moz-box-shadow: 11px 17px 5px 0px rgba(0,63,99,0.75);
+}
+
+.form-group {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+.form-control {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 13px;
+    width: 56%;
+  
+    color: #000;
+}
+
+
+select.form-control {
+    width: 100%;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+
+.myTable {
+    border: none; 
+}
+
+#list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+th {
+    font-size: 1em;
+    padding: 1em;
+    color: #fff;
+    font-weight: 700;
+    background-color: #003F63;
+}
+td {
+   
+    text-align: center;
+    font-size: 1.1em;
+    padding: 1em;
+    font-weight: 500;
+    border-bottom: 0.5px solid #b4b2b2;
+
+}
+
+#table-thead {
+   background-color: #007bff;
+   
+}
+
+
+.white {
+    background-color: white;
+  }
+  
+  .gray {
+    background-color: #F2F2F2;
+  }
+
+  .searchInput {
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 180px;
+    font-size: 16px;
+    color: #555;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+  }
+  
+
+#feito_via {
+    width: 33%;
+}
+
+select.form-control {
+    width: 61%;
+}
+
+.searchSelect {
+        width: 7%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 2em;
+    font-size: 16px;
+}
+
+
+#scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scrollBtn button {
+    background-color: #003F63;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#thobs  {
+  width: 10%;
+  }
+
+#cards {
+    display: flex;
+    justify-content: center;
+} 
+
+.card {
+    width: 160px;
+    height: 90px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #003F63;
+    box-shadow: 11px 17px 5px 0px rgba(0,63,99,0.75);
+-webkit-box-shadow: 11px 17px 5px 0px rgba(0,63,99,0.75);
+-moz-box-shadow: 11px 17px 5px 0px rgba(0,63,99,0.75);
+ }
+
+ .card h2 {
+    font-size: 0.8em;
+    margin: 10px;
+    text-align: center;
+    font-weight: 600;
+ }
+ 
+ .card p {
+    font-size: 2em;
+    margin: 20px;
+    text-align: center;
+    font-weight: 600;
+ }
+
+ #filtro-data-form {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    
+}
+
+#filtro-data-form .form-group {
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+#filtro-data-form .form-control {
+    width: 18%;
+}
+
+#filtro-data-form button[type="submit"] {
+  padding: 8px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 25%;
+  font-weight: bold;
+  background-color: #003F63;
+}
+
+ #data {
+  width: 34%;
+ }
+
+ .teste-t {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end
+ }
+ .teste-p{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end
+ }
+
+ .inicial {
+  margin-right: 20px;
+ }
+
+ .final {
+  margin-left: 20px;
+ }
+
+ .total-class {
+ align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 5px;
+      background-color: #003F63;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+    padding: 1em;
+} 
+
+.down-btn {
+  
+  border-radius: 5px;
+}
+.btn-xls {
+  width: 50px;
+  padding: 0.8em;
+  cursor: pointer;
+  background-color: #003F63;
+  color: white;
+  
+}
+#limpar-filtro-button {
+background-color: red;
+font-weight: bold;
+}
+
+.edit-button {
+    padding: 0.6em;
+    background-color: #003F63;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    margin: 0.2em;
+}
+
+.obs-td {
+    font-size: 0.9em;
+}
+
+#table-index {
+    border-right: 1px double #ffffff;
+   border-left: 1px double #ffffff;
+}
+#addMore {
+        width: 50px;
+        padding: 0.8em;
+        cursor: pointer;
+        background-color: #003F63;
+        color: white;
+
+}
+
+@media (min-width: 1200px) {
+   
+    
+    .form {
+      max-width: 800px;
+    }
+  
+    .form-group {
+      width: 45%;
+    }
+  
+    #feito_via {
+      width: 45%;
+    }
+  
+    select.form-control {
+      width: 70%;
+    }
+  
+    #data {
+      width: 50%;
+    }
+    
+    .card {
+      width: 220px;
+      height: 120px;
+    }
+  
+    .card h2 {
+      font-size: 1em;
+    }
+    
+    .card p {
+      font-size: 2.5em;
+    }
+  
+  }
+  
